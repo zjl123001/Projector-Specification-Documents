@@ -62,3 +62,4 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+master_doc = 'index'
