@@ -1,6 +1,7 @@
 language: python
 sudo: required
-before_install: 
- - sudo pip install sphinx
- - sudo pip install sphinx_rtd_theme
+# Use this to prepare the system to install prerequisites or dependencies
+before_install: "sudo apt-get update"
+# command to install dependencies
+install: "pip install -q -r requirements.txt --use-mirrors"
 script: make html
