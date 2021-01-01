@@ -1,7 +1,4 @@
 language: python
 sudo: required
-# Use this to prepare the system to install prerequisites or dependencies
-before_install: "sudo apt-get update"
-# command to install dependencies
-install: "pip install -q -r requirements.txt "
+before_install: sudo pip install sphinx sphinx-autobuild sphinx_rtd_theme
 script: make html
