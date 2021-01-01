@@ -1,6 +1,6 @@
 language: python
 sudo: required
 before_install: 
-sudo pip install sphinx
-sudo pip install sphinx_rtd_theme
+ - sudo pip install sphinx
+ - sudo pip install sphinx_rtd_theme
 script: make html
