@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 <html lang="zh_CN">
@@ -15,40 +14,6 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "zjl123001/Projector-Specification-Documents");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="_static/translations.js"></script>
     <script src="_static/searchtools.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
@@ -112,7 +77,22 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
       </div>
 		
-	  </div>
+		<div id="container"></div>
+			<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+				<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+			<script>
+				var gitment = new Gitment({
+				owner: 'zjl123001',
+				repo: 'Projector-Specification-Documents',
+				oauth: {
+    					id: '页面 ID', // 可选。默认为 location.href
+    					client_id: '477847c6e64be3e49830',
+    					client_secret: 'f726572875c1cbbeab6087f7122c877e3f9cf31d',
+							},
+						})
+						gitment.render('container')
+						</script>
+	 	 </div>
 	  <div class="aside pull-right">
 		
 		
