@@ -2,9 +2,6 @@
 # Workaround for issue https://github.com/sphinx-contrib/googleanalytics/issues/2
 # Note that a warning still will be issued "unsupported object from its setup() function"
 # Remove this workaround when the issue has been resolved upstream
-import sphinx.application
-import sphinx.errors
-sphinx.application.ExtensionError = sphinx.errors.ExtensionError
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -37,7 +34,7 @@ release = '1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.googleanalytics']
+extensions = []
 
 
 
@@ -74,4 +71,3 @@ html_theme = 'dou'
 
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 master_doc = 'index'
-googleanalytics_id = 'G-EHMD77NKDQ'
