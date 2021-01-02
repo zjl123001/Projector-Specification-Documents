@@ -76,22 +76,22 @@
         </div>
       </div>
 		
-		<div id="container"></div>
-			<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-				<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-			<script>
-				var gitment = new Gitment({
-				owner: 'zjl123001',
-				repo: 'Projector-Specification-Documents',
-				oauth: {
-    					id: '页面 ID', // 可选。默认为 location.href
-    					client_id: '477847c6e64be3e49830',
-    					client_secret: 'f726572875c1cbbeab6087f7122c877e3f9cf31d',
-							},
-						})
-						gitment.render('container')
-						</script>
-	 	 </div>
+		<div id="gitalk-container"></div>     
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+    // gitalk的主要参数
+      clientID: `477847c6e64be3e49830`,   //上面获取到的值
+      clientSecret: `f726572875c1cbbeab6087f7122c877e3f9cf31d`,//上面获取到的值
+      repo: `zjl123001`,  //您刚才建立仓库的名字
+      owner: 'comments',   //你的GitHub用户名字
+      admin: ['zjl123001'],  //你的GitHub用户的名字
+      id: '0', //id不能重复，如果重复就会把其他页面的评论引进来
+        });
+      gitalk.render('gitalk-container');
+</script> 
+	  </div>
 	  <div class="aside pull-right">
 		
 		
