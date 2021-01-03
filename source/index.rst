@@ -8,7 +8,8 @@ Welcome to Project-Specification-Documents's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 目录：
+   :numbered:
 
 
 
@@ -16,7 +17,7 @@ Indices and tables
 ==================
 
 
+Basic_functions.rst
+Resolutions.rst
+Statement.rst
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
