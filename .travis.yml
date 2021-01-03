@@ -1,0 +1,4 @@
+language: python
+sudo: required
+before_install: sudo pip install sphinx sphinx-autobuild sphinx_rtd_theme
+script: make html
