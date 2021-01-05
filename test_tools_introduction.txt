@@ -1,0 +1,17 @@
+1.文档自动测试工具
+有一些web自动测试工具可用于文档测试，例如UFT(Unified Functional Testing)。
+UFT可以录制人工点击链接的操作，自动生成脚本，自动生成的脚本可以更改。但是它无法保证页面上所有链接都被测试过。详见：
+https://www.cnblogs.com/hello-yz/p/11069314.html
+
+由于我们的说明书具有极强的结构性，我们可以自己设计程序测试链接可用性。
+具体步骤为：
+第一步，在一个txt文件内按
+Introduction 7
+Links 4
+这个格式录入主标题和对应包括的页面总数（包括主标题页面本身）
+第二步，运行py程序，程序自动访问对应url，给出url是否正常的反馈。出错的url会被单独记录。
+
+2.语法纠错工具
+中文文本语法纠错有一些现成可用的工具，例如：
+https://wucuozi.com/
+https://languagetool.org/
