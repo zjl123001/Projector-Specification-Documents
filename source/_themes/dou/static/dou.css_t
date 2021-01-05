@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font: 12px Helvetica, Arial, sans-serif;
+  font: 14px Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 h1 {
@@ -25,7 +25,6 @@ a:active {
   background: #37a;
 }
 ul {
-  list-style-type: none;
   padding-left: 10px;
 }
 pre {
