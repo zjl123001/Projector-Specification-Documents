@@ -16,6 +16,8 @@ EPSON投影仪说明书
 #. 文档托管。`Read the Docs <http://readthedocs.org>`_
 #. 写作工具。`MS Visual Studio Code <https://code.visualstudio.com>`_
 
+`本项目github地址 <https://github.com/zjl123001/Projector-Specification-Documents>`_
+
 
 目录
 ===========================================================
