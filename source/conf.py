@@ -71,6 +71,7 @@ html_theme = 'dou'
 
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 master_doc = 'index'
+'''
 pdf_documents = [
     ('index', u'EPSON投影仪说明书', u'EPSON投影仪说明书', u'PKU_CAT_students'),
 ]
@@ -145,3 +146,4 @@ pdf_use_numbered_links = False
  
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
+'''
