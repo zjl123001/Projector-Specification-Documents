@@ -21,7 +21,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Project-Specification-Documents'
+project = 'EPSON投影仪说明书'
 copyright = '2021, PKU_CAT_students'
 author = 'PKU_CAT_students'
 
