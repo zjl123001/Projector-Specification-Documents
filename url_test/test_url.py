@@ -33,6 +33,6 @@ class Web_url_test():
 
 if __name__ == '__main__':
     web_url_test = Web_url_test()
-    web_url_test.get_menu(".\menu.txt")
+    web_url_test.get_menu("menu.txt")
     for item in web_url_test.menu:
         web_url_test.web_is_working(item[0], int(item[1]))
